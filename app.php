@@ -1,10 +1,5 @@
 <?php
 
-$sex = "male"; // cinsiyet (male/female)
-$weight = 55; // kilo (kg)
-$height = 170; // boy (cm)
-$age = 25; // yaş (sene)
-
 /**
  * Bu ödevde günlük kalori hesaplaması yapacağız.
  * Yukarıdaki değişkenleri ve aşağıdaki formülü kullanarak
@@ -16,9 +11,21 @@ $age = 25; // yaş (sene)
  * 
  * Örneğin;
  * $sex = "female";
- * $weight = 60;
+ * $weight = 55;
  * $height = 170;
- * $age = 30;
+ * $age = 25;
  * 
  * Ekrana 1326.5 yazması gerekiyor.
  */
+
+$sex = "male"; // cinsiyet (male/female)
+$weight = 55; // kilo (kg)
+$height = 170; // boy (cm)
+$age = 25; // yaş (sene)
+
+if($sex == "male")
+  echo 10*$weight+6.25*$height-5*$age+5;
+if($sex == "female")
+  echo 10*$weight+6.25*$height-5*$age-161;
+
+
